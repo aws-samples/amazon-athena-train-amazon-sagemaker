@@ -1,4 +1,4 @@
-## My Project
+## Build, Train, Tune and Deploy Machine Learning Models using SQL in Athena
 
 TODO: Fill this README out!
 
