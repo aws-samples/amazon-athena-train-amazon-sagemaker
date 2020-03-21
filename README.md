@@ -15,8 +15,7 @@ tldr; Pre-reqs to Get Started:
 1. Ensure latest version of [SAM CLI is intalled](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html) (Tested with 0.45.0)
 1. Ensure [SageMaker Java SDK](https://github.com/aws/aws-sdk-java/tree/master/aws-java-sdk-sagemaker) is installed on the machine 
 1. Ensure Amazon SageMaker Java SDK is added in Maven Local repo. If not, add `<packaging>jar</packaging>` in SageMaker SDK pom.xml, then compile with Maven command `mvn clean install`.
-1. Navigate to [Servless Application Repository](https://console.aws.amazon.com/serverlessrepo/home#/available-applications) and search for "athena-federation". Be sure to check the box to show entries that require custom IAM roles. 
-1. Look for entries published by the "Amazon Athena Federation" author.
+1. Navigate to [Servless Application Repository](https://console.aws.amazon.com/serverlessrepo/home#/available-applications) and search for "athena-federation". Be sure to check the box to show entries that require custom IAM roles. Look for entries published by the "Amazon Athena Federation" author. You can also click https://console.aws.amazon.com/lambda/home#/create/app?applicationId=arn:aws:serverlessrepo:us-east-1:292517598671:applications/AthenaUserDefinedFunctions
 1. Deploy the application
 1. Go to the [Athena Console in us-east-1 (N. Virginia)](https://console.aws.amazon.com/athena/home) and create a workgroup called "AmazonAthenaPreviewFunctionality", any queries run from that workgroup will be able to use Preview features described in this repository.
 1. Run a query "show databases in \`lambda:<func_name>\`" where <func_name> is the name of the Lambda function you deployed in the previous steps.
