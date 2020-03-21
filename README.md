@@ -18,6 +18,7 @@ tldr; Pre-reqs to Get Started:
 1. Navigate to [Servless Application Repository](https://console.aws.amazon.com/serverlessrepo/home#/available-applications) and search for "athena-federation". Be sure to check the box to show entries that require custom IAM roles. Look for entries published by the "Amazon Athena Federation" author named "AthenaUserDefinedFunctions"
 1. Deploy the application
 1. Go to the [Athena Console in us-east-1 (N. Virginia)](https://console.aws.amazon.com/athena/home) and create a workgroup called "AmazonAthenaPreviewFunctionality", any queries run from that workgroup will be able to use Preview features described in this repository.
+![Create Workgroup](createworkgroup.png)
 1. Run a query "show databases in \`lambda:<func_name>\`" where <func_name> is the name of the Lambda function you deployed in the previous steps.
 1. Go to ["athena-udfs"](./athena-udfs) folder on this repo and follow instruction there to create custom Athena UDF with Amazon SageMaker
 
